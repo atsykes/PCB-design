@@ -19,7 +19,7 @@ mcp = Adafruit_MCP3008.MCP3008(spi=SPI.SpiDev(SPI_PORT, SPI_DEVICE))
 # accordingly. Then, use them to determine
 # when it is light or dark, quiet or loud.
 lux_threshold=300  # change this value
-sound_threshold=0 # change this value
+sound_threshold=650 # change this value
 
 LUXPIN = 0
 SOUNDPIN = 1
@@ -27,7 +27,7 @@ SOUNDPIN = 1
 for i in range(0,5): 
   GPIO.output(pin, GPIO.HIGH)
   time.sleep(.5)
-  GPIO.output(pin, GPIO.LOX)
+  GPIO.output(pin, GPIO.LOW)
   time.sleep(.5)
 
 for i in range(0,50):
@@ -42,7 +42,7 @@ for i in range(0,50):
 for i in range(0,4): 
   GPIO.output(pin, GPIO.HIGH)
   time.sleep(.2)
-  GPIO.output(pin, GPIO.LOX)
+  GPIO.output(pin, GPIO.LOW)
   time.sleep(.2)
 
 for i in range(0,50):
@@ -51,6 +51,6 @@ for i in range(0,50):
   if sound_val > sound_threshold: 
     GPIO.output(pin, GPIO.HIGH)
   else: 
-    GPIO.output(pin, GPIO.HIGH)
+    GPIO.output(pin, GPIO.LOW)
   
   time.sleep(.1)
