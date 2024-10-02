@@ -45,7 +45,5 @@ while True:
       print("DARK")
   else: 
     break
-  
-  time.sleep(.1)
 
-  sustem_time = time.time() - epoch
+  system_time = time.time() - epoch
