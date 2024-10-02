@@ -43,6 +43,8 @@ while True:
       print("BRIGHT")
     else: 
       print("DARK")
+
+    time.sleep(.1)
   else: 
     break
 
