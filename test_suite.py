@@ -1,3 +1,7 @@
+"""
+Team Members: Andrew Sykes, Nathan Scherrer
+GITHUB REPO LINK: https://github.com/atsykes/PCB-design
+"""
 import time
 import RPi.GPIO as GPIO
 import Adafruit_GPIO.SPI as SPI
