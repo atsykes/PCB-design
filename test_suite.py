@@ -24,8 +24,9 @@ sound_threshold=0 # change this value
 LUXPIN = 0
 SOUNDPIN = 1
 
-system_time = time.time() 
+epoch = time.time() 
 
+system_time = time.time() - epoch
 while True: 
   if system_time <= 5: 
     # Blink LED 
@@ -47,4 +48,4 @@ while True:
   
   time.sleep(.1)
 
-  sustem_time = time.time()
+  sustem_time = time.time() - epoch
