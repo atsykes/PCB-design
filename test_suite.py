@@ -37,7 +37,7 @@ while True:
   elif system_time <= 10: 
     # Read Light Sensor and Output Value #
 
-    val = mcp.read(LUXPIN)
+    val = mcp.read([mcp.CH0])
     print(val)
     if val > lux_threshold: 
       print("BRIGHT")
