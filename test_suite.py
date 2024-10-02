@@ -27,7 +27,8 @@ while True:
 
   #Following commands control the state of the output
   GPIO.output(pin, GPIO.HIGH)
+  time.sleep(0.5)
   GPIO.output(pin, GPIO.LOW)
 
   # get reading from adc 
-  mcp.read_adc(19)
+  # mcp.read_adc(1)
